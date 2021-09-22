@@ -1,0 +1,20 @@
+PODS:
+  - Anchorage (4.5.0)
+  - LookinServer (1.0.4)
+
+DEPENDENCIES:
+  - Anchorage
+  - LookinServer
+
+SPEC REPOS:
+  trunk:
+    - Anchorage
+    - LookinServer
+
+SPEC CHECKSUMS:
+  Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
+  LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
+
+PODFILE CHECKSUM: c3941e896859adad6290ab487036258b1e43ae19
+
+COCOAPODS: 1.10.1
