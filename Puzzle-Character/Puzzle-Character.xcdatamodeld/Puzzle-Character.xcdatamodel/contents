@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Copybook" representedClassName="Copybook" syncable="YES" codeGenerationType="class">
+        <attribute name="case1" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Copybook" positionX="-34029.62786865234" positionY="-8710.050140380859" width="128" height="58"/>
+    </elements>
+</model>
