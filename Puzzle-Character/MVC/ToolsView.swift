@@ -8,9 +8,6 @@
 import Anchorage
 import UIKit
 
-let colorNotSelected = UIColor(red: 102 / 255, green: 34 / 255, blue: 29 / 255, alpha: 1)
-let colorSelected = UIColor(red: 186 / 255, green: 97 / 255, blue: 93 / 255, alpha: 1)
-
 class ToolsView: UIView {
     private var copybookStackView = UIStackView(tool: [UIImageView(imageName: "瓦当"), UIImageView(imageName: "字帖")])
     private var historyStackView = UIStackView(tool: [UIImageView(imageName: "瓦当"), UIImageView(imageName: "历史")])
@@ -18,10 +15,16 @@ class ToolsView: UIView {
     private var pencilView = ToolView(image: UIImage(named: "pencil"))
     private var addView = ToolView(image: UIImage(named: "add"))
     private lazy var toolsStackView = UIStackView(tools: [self.copybookStackView, self.historyStackView, self.settingStackView])
-    
+    var copybookCallBack: Block?
+    var historyCallBack: Block?
+    var settingCallBack: Block?
+    // Todo
+    private var copybookView = UIImageView(image: UIImage(named: "字帖示例"))
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configViews()
+        copybookTap()
     }
     
     private func configViews() {
@@ -46,14 +49,20 @@ class ToolsView: UIView {
     
     @objc private func copybookTap() {
         self.configToolsColor(type: .copybook)
+        self.hasToolsShowed(true)
+        self.copybookCallBack?()
     }
     
     @objc private func historyTap() {
         self.configToolsColor(type: .history)
+        self.hasToolsShowed(false)
+        self.historyCallBack?()
     }
     
     @objc private func settingTap() {
         self.configToolsColor(type: .setting)
+        self.hasToolsShowed(false)
+        self.settingCallBack?()
     }
     
     private func configToolColor(stackView: UIStackView, color: UIColor) {
@@ -83,6 +92,11 @@ class ToolsView: UIView {
             configToolColor(stackView: self.historyStackView, color: colorNotSelected)
             configToolColor(stackView: self.settingStackView, color: colorSelected)
         }
+    }
+    
+    private func hasToolsShowed(_ ToolsFromCopybook: Bool) {
+        self.pencilView.isHidden = ToolsFromCopybook ? false : true
+        self.addView.isHidden = ToolsFromCopybook ? false : true
     }
     
     required init?(coder: NSCoder) {
