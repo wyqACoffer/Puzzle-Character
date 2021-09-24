@@ -272,6 +272,8 @@
 				55362F4326FE21F60003E4DF /* TextView.swift in Sources */,
 				55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */,
 				551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */,
+				372A529026FDB346008BD3FF /* TextFieldView.swift in Sources */,
+				372A528E26FD6EA3008BD3FF /* CharacterController.swift in Sources */,
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
 				55362F3626FB9B730003E4DF /* ToolView.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,
