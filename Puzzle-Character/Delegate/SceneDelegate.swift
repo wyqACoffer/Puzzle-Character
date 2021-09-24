@@ -14,12 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-<<<<<<< HEAD
-        //设置window的rootViewController
-        self.window?.rootViewController = TextViewController()
-=======
         self.window?.rootViewController = Controller()
->>>>>>> 202388e... update code
         self.window?.makeKeyAndVisible()
     }
 

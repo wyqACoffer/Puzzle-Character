@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3753171826FCBF2C001BFE9F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753171726FCBF2C001BFE9F /* TextViewController.swift */; };
-		3753171C26FCE43E001BFE9F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753171B26FCE43E001BFE9F /* TextView.swift */; };
 		551F1C6926E76A3600DA7B3A /* ToolsColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6826E76A3600DA7B3A /* ToolsColorType.swift */; };
 		551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6A26E76A4500DA7B3A /* ToolsView.swift */; };
 		55362F3426FB732D0003E4DF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3326FB732D0003E4DF /* Extension.swift */; };
@@ -25,8 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3753171726FCBF2C001BFE9F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
-		3753171B26FCE43E001BFE9F /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		38CB23DBCAE623C6F21D1D7B /* Pods-Puzzle-Character.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.debug.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.debug.xcconfig"; sourceTree = "<group>"; };
 		551F1C6826E76A3600DA7B3A /* ToolsColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsColorType.swift; sourceTree = "<group>"; };
 		551F1C6A26E76A4500DA7B3A /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
@@ -81,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				55A6638A26D4F9E200DF68D2 /* Controller.swift */,
-				3753171726FCBF2C001BFE9F /* TextViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -100,12 +95,8 @@
 			children = (
 				55362F3526FB9B730003E4DF /* ToolView.swift */,
 				551F1C6A26E76A4500DA7B3A /* ToolsView.swift */,
-<<<<<<< HEAD
-				3753171B26FCE43E001BFE9F /* TextView.swift */,
-=======
 				55362F3C26FCB8C30003E4DF /* CopyBookView.swift */,
 				55362F3E26FCE80C0003E4DF /* HistoryView.swift */,
->>>>>>> 202388e... update code
 				55362F3326FB732D0003E4DF /* Extension.swift */,
 			);
 			name = Views;
@@ -277,16 +268,10 @@
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
 				55362F3626FB9B730003E4DF /* ToolView.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,
-<<<<<<< HEAD
-				3753171C26FCE43E001BFE9F /* TextView.swift in Sources */,
-				551F1C6926E76A3600DA7B3A /* ToolsColorType.swift in Sources */,
-				3753171826FCBF2C001BFE9F /* TextViewController.swift in Sources */,
-=======
 				55362F3D26FCB8C30003E4DF /* CopyBookView.swift in Sources */,
 				55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */,
 				551F1C6926E76A3600DA7B3A /* ToolsColorType.swift in Sources */,
 				55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */,
->>>>>>> 202388e... update code
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,13 +412,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UFQNVDNRH9;
+				DEVELOPMENT_TEAM = 8STFK33237;
 				INFOPLIST_FILE = "Puzzle-Character/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fms.Puzzle-Character";
+				PRODUCT_BUNDLE_IDENTIFIER = "wyq.Puzzle-Character";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,13 +432,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UFQNVDNRH9;
+				DEVELOPMENT_TEAM = 8STFK33237;
 				INFOPLIST_FILE = "Puzzle-Character/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fms.Puzzle-Character";
+				PRODUCT_BUNDLE_IDENTIFIER = "wyq.Puzzle-Character";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
