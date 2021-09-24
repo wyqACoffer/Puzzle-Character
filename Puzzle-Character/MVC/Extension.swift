@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Extension
+// MARK: Extension
 
 extension UIImageView {
     convenience init(imageName: String) {
@@ -32,6 +32,5 @@ extension UIStackView {
         self.axis = .horizontal
         self.alignment = .center
         self.distribution = .equalSpacing
-//        self.isUserInteractionEnabled = true
     }
 }
