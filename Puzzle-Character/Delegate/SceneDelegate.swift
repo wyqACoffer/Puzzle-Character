@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //创建window
         self.window = UIWindow(windowScene: windowScene)
         //设置window的rootViewController
-        self.window?.rootViewController = Controller()
+        self.window?.rootViewController = TextViewController()
         self.window?.makeKeyAndVisible()
     }
 
