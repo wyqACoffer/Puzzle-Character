@@ -10,8 +10,7 @@ import UIKit
 
 class TextViewController: UIViewController{
     private var textView = TextView()
-    private var textFiledView = TextFieldView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init(red: 0.9, green: 0.88, blue: 0.84, alpha: 1)
@@ -20,11 +19,8 @@ class TextViewController: UIViewController{
     
     private func configViews() {
         self.view.addSubview(self.textView)
-        self.view.addSubview(self.textFiledView)
-        self.textView.topAnchor == self.view.topAnchor + 78
-        self.textView.leftAnchor == self.view.leftAnchor + 385
-        self.textFiledView.topAnchor == self.view.topAnchor + 251
-        self.textFiledView.leftAnchor == self.view.leftAnchor + 103
+        self.textView.topAnchor == self.view.topAnchor + 167
+        self.textView.leftAnchor == self.view.leftAnchor + 183
     }
     
 }

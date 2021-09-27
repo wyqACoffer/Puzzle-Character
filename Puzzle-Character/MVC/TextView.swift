@@ -9,7 +9,11 @@ import Anchorage
 import UIKit
 
 class TextView: UIView{
-    private var textTitle = UIImageView(imageName: "输入文本")
+    private var textTitle = TextTitleView()
+    private var textField = TextFieldView()
+    private lazy var fieldStackView = UIStackView(tools: [self.textTitle, self.textField])
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configViews()
@@ -20,7 +24,10 @@ class TextView: UIView{
     }
     
     private func configViews() {
-        self.addSubview(textTitle)
-
+        self.addSubview(self.fieldStackView)
+        fieldStackView.axis = .vertical
+        fieldStackView.alignment = .center
+        fieldStackView.spacing = 126
+        self.fieldStackView.centerAnchors == self.centerAnchors
     }
 }
