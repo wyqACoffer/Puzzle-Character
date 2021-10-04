@@ -8,7 +8,7 @@
 import Anchorage
 import UIKit
 
-class Controller: UIViewController {
+class MainController: UIViewController {
     private var toolsView = ToolsView()
     // Todo
     private var copybookView = CopyboolView(image: UIImage(named: "字帖示例"))
