@@ -76,21 +76,21 @@ class ToolsView: UIView {
     private func configToolsColor(type: ToolsColorType) {
         switch type {
         case .empty:
-            configToolColor(stackView: self.copybookStackView, color: colorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: colorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: colorNotSelected)
+            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .copybook:
-            configToolColor(stackView: self.copybookStackView, color: colorSelected)
-            configToolColor(stackView: self.historyStackView, color: colorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: colorNotSelected)
+            configToolColor(stackView: self.copybookStackView, color: gColorSelected)
+            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .history:
-            configToolColor(stackView: self.copybookStackView, color: colorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: colorSelected)
-            configToolColor(stackView: self.settingStackView, color: colorNotSelected)
+            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.historyStackView, color: gColorSelected)
+            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .setting:
-            configToolColor(stackView: self.copybookStackView, color: colorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: colorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: colorSelected)
+            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            configToolColor(stackView: self.settingStackView, color: gColorSelected)
         }
     }
     
