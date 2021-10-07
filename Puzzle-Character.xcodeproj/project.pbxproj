@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		551F1C6926E76A3600DA7B3A /* ToolsColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6826E76A3600DA7B3A /* ToolsColorType.swift */; };
+		551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6826E76A3600DA7B3A /* Enums.swift */; };
 		551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6A26E76A4500DA7B3A /* ToolsView.swift */; };
 		55362F3426FB732D0003E4DF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3326FB732D0003E4DF /* Extension.swift */; };
 		55362F3626FB9B730003E4DF /* ToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3526FB9B730003E4DF /* ToolView.swift */; };
@@ -16,15 +16,23 @@
 		55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F4026FCEAC80003E4DF /* GlobalProperties.swift */; };
 		55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638626D4F9E200DF68D2 /* AppDelegate.swift */; };
 		55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */; };
-		55A6638B26D4F9E200DF68D2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638A26D4F9E200DF68D2 /* MainController.swift */; };
+		55A6638B26D4F9E200DF68D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638A26D4F9E200DF68D2 /* MainViewController.swift */; };
 		55A6639026D4F9E400DF68D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A6638F26D4F9E400DF68D2 /* Assets.xcassets */; };
 		55A6639326D4F9E400DF68D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A6639126D4F9E400DF68D2 /* LaunchScreen.storyboard */; };
+		55EA9E3B270B21B500C1BAEC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E3A270B21B500C1BAEC /* HistoryViewController.swift */; };
+		55EA9E3D270B225400C1BAEC /* HistoryLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E3C270B225400C1BAEC /* HistoryLineView.swift */; };
+		55EA9E3F270DE97E00C1BAEC /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E3E270DE97E00C1BAEC /* BackView.swift */; };
+		55EA9E41270EEC1600C1BAEC /* NavigatonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E40270EEC1600C1BAEC /* NavigatonController.swift */; };
+		55EA9E43270EF1C500C1BAEC /* WriteToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E42270EF1C500C1BAEC /* WriteToolsViewController.swift */; };
+		55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */; };
+		55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E48270F70EC00C1BAEC /* FontView.swift */; };
+		55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */; };
 		A799FA79A7EC8E963B63A69A /* Pods_Puzzle_Character.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38CB23DBCAE623C6F21D1D7B /* Pods-Puzzle-Character.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.debug.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.debug.xcconfig"; sourceTree = "<group>"; };
-		551F1C6826E76A3600DA7B3A /* ToolsColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsColorType.swift; sourceTree = "<group>"; };
+		551F1C6826E76A3600DA7B3A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		551F1C6A26E76A4500DA7B3A /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		55362F3326FB732D0003E4DF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		55362F3526FB9B730003E4DF /* ToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolView.swift; sourceTree = "<group>"; };
@@ -34,10 +42,18 @@
 		55A6638326D4F9E200DF68D2 /* Puzzle-Character.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle-Character.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A6638626D4F9E200DF68D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55A6638A26D4F9E200DF68D2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		55A6638A26D4F9E200DF68D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		55A6638F26D4F9E400DF68D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55A6639226D4F9E400DF68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55A6639426D4F9E400DF68D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55EA9E3A270B21B500C1BAEC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		55EA9E3C270B225400C1BAEC /* HistoryLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLineView.swift; sourceTree = "<group>"; };
+		55EA9E3E270DE97E00C1BAEC /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		55EA9E40270EEC1600C1BAEC /* NavigatonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatonController.swift; sourceTree = "<group>"; };
+		55EA9E42270EF1C500C1BAEC /* WriteToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteToolsViewController.swift; sourceTree = "<group>"; };
+		55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		55EA9E48270F70EC00C1BAEC /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
+		55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
 		5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle_Character.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.release.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +92,12 @@
 		55362F3026FB72BF0003E4DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				55A6638A26D4F9E200DF68D2 /* MainController.swift */,
+				55EA9E40270EEC1600C1BAEC /* NavigatonController.swift */,
+				55A6638A26D4F9E200DF68D2 /* MainViewController.swift */,
+				55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */,
+				55EA9E3A270B21B500C1BAEC /* HistoryViewController.swift */,
+				55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */,
+				55EA9E42270EF1C500C1BAEC /* WriteToolsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -85,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				55362F4026FCEAC80003E4DF /* GlobalProperties.swift */,
-				551F1C6826E76A3600DA7B3A /* ToolsColorType.swift */,
+				551F1C6826E76A3600DA7B3A /* Enums.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -97,6 +118,9 @@
 				551F1C6A26E76A4500DA7B3A /* ToolsView.swift */,
 				55362F3C26FCB8C30003E4DF /* CopyBookView.swift */,
 				55362F3E26FCE80C0003E4DF /* HistoryView.swift */,
+				55EA9E3C270B225400C1BAEC /* HistoryLineView.swift */,
+				55EA9E48270F70EC00C1BAEC /* FontView.swift */,
+				55EA9E3E270DE97E00C1BAEC /* BackView.swift */,
 				55362F3326FB732D0003E4DF /* Extension.swift */,
 			);
 			name = Views;
@@ -262,16 +286,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A6638B26D4F9E200DF68D2 /* MainController.swift in Sources */,
+				55A6638B26D4F9E200DF68D2 /* MainViewController.swift in Sources */,
 				55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */,
 				551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */,
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
 				55362F3626FB9B730003E4DF /* ToolView.swift in Sources */,
+				55EA9E43270EF1C500C1BAEC /* WriteToolsViewController.swift in Sources */,
+				55EA9E3B270B21B500C1BAEC /* HistoryViewController.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,
 				55362F3D26FCB8C30003E4DF /* CopyBookView.swift in Sources */,
 				55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */,
-				551F1C6926E76A3600DA7B3A /* ToolsColorType.swift in Sources */,
+				55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */,
+				55EA9E41270EEC1600C1BAEC /* NavigatonController.swift in Sources */,
+				55EA9E3D270B225400C1BAEC /* HistoryLineView.swift in Sources */,
+				551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */,
+				55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */,
+				55EA9E3F270DE97E00C1BAEC /* BackView.swift in Sources */,
 				55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */,
+				55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

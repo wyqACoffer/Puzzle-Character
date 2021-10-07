@@ -1,6 +1,8 @@
 PODS:
   - Anchorage (4.5.0)
+  - Hero (1.6.1)
   - LookinServer (1.0.4)
+  - MaLiang (2.9.2)
   - Realm (10.15.1):
     - Realm/Headers (= 10.15.1)
   - Realm/Headers (10.15.1)
@@ -9,22 +11,28 @@ PODS:
 
 DEPENDENCIES:
   - Anchorage
+  - Hero
   - LookinServer
+  - MaLiang
   - RealmSwift (~> 10)
 
 SPEC REPOS:
   trunk:
     - Anchorage
+    - Hero
     - LookinServer
+    - MaLiang
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
   Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
+  MaLiang: 7cf6c70e37577b5ec1b34add37fa6d58808f5451
   Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
   RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
 
-PODFILE CHECKSUM: 9cf34835b8f797ba8c318fcf0c20ca3c90475854
+PODFILE CHECKSUM: 292be37fcc9e17e86faf2301a158ee2319853a2e
 
 COCOAPODS: 1.10.1

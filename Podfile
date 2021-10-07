@@ -9,5 +9,7 @@ target 'Puzzle-Character' do
   pod 'Anchorage'
   pod 'LookinServer', :configurations => ['Debug']
   pod 'RealmSwift', '~>10'
+  pod 'MaLiang'
+  pod 'Hero'
 
 end
