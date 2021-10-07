@@ -5,13 +5,18 @@
 //  Created by Acoffer on 2021/9/24.
 //
 
+
+
+
 import Anchorage
 import UIKit
 
-class HisToryView: UIView {
+class HistoryView: UIView {
     private var fontView = UIImageView(image: UIImage(named: "字体"))
     private var writeToolView = UIImageView(image: UIImage(named: "书写工具"))
     private lazy var stackView = UIStackView(arrangedSubviews: [self.fontView, self.writeToolView])
+    var fontViewCallback: Block?
+    var writeToolViewCallback: Block?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,6 +31,18 @@ class HisToryView: UIView {
         self.stackView.spacing = 182
         self.stackView.edgeAnchors == self.edgeAnchors
         self.isHidden = true
+        self.fontView.isUserInteractionEnabled = true
+        self.fontView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapFontView)))
+        self.writeToolView.isUserInteractionEnabled = true
+        self.writeToolView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapWriteToolView)))
+    }
+    
+    @objc private func didTapFontView() {
+        self.fontViewCallback?()
+    }
+    
+    @objc private func didTapWriteToolView() {
+        self.writeToolViewCallback?()
     }
     
     required init?(coder: NSCoder) {

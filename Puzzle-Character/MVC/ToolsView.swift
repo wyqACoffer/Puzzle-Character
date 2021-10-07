@@ -15,16 +15,16 @@ class ToolsView: UIView {
     private var pencilView = ToolView(image: UIImage(named: "pencil"))
     private var addView = ToolView(image: UIImage(named: "add"))
     private lazy var toolsStackView = UIStackView(tools: [self.copybookStackView, self.historyStackView, self.settingStackView])
-    var copybookCallBack: Block?
-    var historyCallBack: Block?
-    var settingCallBack: Block?
+    var copybookCallback: Block?
+    var historyCallback: Block?
+    var settingCallback: Block?
     // Todo
     private var copybookView = UIImageView(image: UIImage(named: "字帖示例"))
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configViews()
-        copybookTap()
+        self.didTapCopybook()
     }
     
     private func configViews() {
@@ -35,9 +35,9 @@ class ToolsView: UIView {
         self.addSubview(self.pencilView)
         self.addSubview(self.addView)
         
-        self.copybookStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(copybookTap)))
-        self.historyStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(historyTap)))
-        self.settingStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(settingTap)))
+        self.copybookStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapCopybook)))
+        self.historyStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapHistory)))
+        self.settingStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapSetting)))
         
         self.addView.centerYAnchor == self.centerYAnchor
         self.addView.rightAnchor == self.rightAnchor - 24
@@ -47,22 +47,22 @@ class ToolsView: UIView {
         self.toolsStackView.leftAnchor == self.leftAnchor + 24
     }
     
-    @objc private func copybookTap() {
+    @objc private func didTapCopybook() {
         self.configToolsColor(type: .copybook)
         self.hasToolsShowed(true)
-        self.copybookCallBack?()
+        self.copybookCallback?()
     }
     
-    @objc private func historyTap() {
+    @objc private func didTapHistory() {
         self.configToolsColor(type: .history)
         self.hasToolsShowed(false)
-        self.historyCallBack?()
+        self.historyCallback?()
     }
     
-    @objc private func settingTap() {
+    @objc private func didTapSetting() {
         self.configToolsColor(type: .setting)
         self.hasToolsShowed(false)
-        self.settingCallBack?()
+        self.settingCallback?()
     }
     
     private func configToolColor(stackView: UIStackView, color: UIColor) {
@@ -76,21 +76,21 @@ class ToolsView: UIView {
     private func configToolsColor(type: ToolsColorType) {
         switch type {
         case .empty:
-            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .copybook:
-            configToolColor(stackView: self.copybookStackView, color: gColorSelected)
-            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.copybookStackView, color: gColorSelected)
+            self.configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .history:
-            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: gColorSelected)
-            configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.historyStackView, color: gColorSelected)
+            self.configToolColor(stackView: self.settingStackView, color: gColorNotSelected)
         case .setting:
-            configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
-            configToolColor(stackView: self.settingStackView, color: gColorSelected)
+            self.configToolColor(stackView: self.copybookStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.historyStackView, color: gColorNotSelected)
+            self.configToolColor(stackView: self.settingStackView, color: gColorSelected)
         }
     }
     
