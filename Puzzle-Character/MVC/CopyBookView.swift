@@ -1,5 +1,5 @@
 //
-//  CopyBookView.swift
+//  CopybookView.swift
 //  Puzzle-Character
 //
 //  Created by Acoffer on 2021/9/23.
@@ -9,7 +9,7 @@ import Anchorage
 import UIKit
 
 // Todo
-class CopyboolView: UIImageView {
+class CopybookView: UIImageView {
     override init(image: UIImage?) {
         super.init(image: image)
     }

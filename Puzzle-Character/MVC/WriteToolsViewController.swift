@@ -10,7 +10,7 @@ import Hero
 import UIKit
 
 class WriteToolsViewController: CustomViewController {
-    private var writeToolsDetailView = UIImageView(image: UIImage(named: "书写工具详情"))
+    private var writeToolsDetailView = UIImageView(image: UIImage(named: "笔"))
     
     override func viewDidLoad() {
         super.viewDidLoad()

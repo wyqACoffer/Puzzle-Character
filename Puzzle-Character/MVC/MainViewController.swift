@@ -12,8 +12,9 @@ import UIKit
 class MainViewController: UIViewController {
     private var toolsView = ToolsView()
     // Todo
-    private var copybookView = CopyboolView(image: UIImage(named: "字帖示例"))
+    private var copybookView = CopybookView(image: UIImage(named: "字帖示例"))
     private var historyView = HistoryView()
+    private var settingView = SettingView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,8 @@ class MainViewController: UIViewController {
         self.copybookView.leftAnchor == self.view.leftAnchor + 77
         self.view.addSubview(self.historyView)
         self.historyView.centerAnchors == self.view.centerAnchors
-        self.hero.modalAnimationType = .pageOut(direction: .right)
+        self.view.addSubview(self.settingView)
+        self.settingView.centerAnchors == self.view.centerAnchors
     }
     
     private func configCallback() {
@@ -43,16 +45,19 @@ class MainViewController: UIViewController {
             guard let self = self else { return }
             self.copybookView.isHidden = false
             self.historyView.isHidden = true
+            self.settingView.isHidden = true
         }
         self.toolsView.historyCallback = { [weak self] in
             guard let self = self else { return }
             self.copybookView.isHidden = true
             self.historyView.isHidden = false
+            self.settingView.isHidden = true
         }
         self.toolsView.settingCallback = { [weak self] in
             guard let self = self else { return }
             self.copybookView.isHidden = true
             self.historyView.isHidden = true
+            self.settingView.isHidden = false
         }
         self.historyView.fontViewCallback = { [weak self] in
             guard let self = self else { return }
@@ -63,5 +68,8 @@ class MainViewController: UIViewController {
             self.navigationController?.pushViewController(WriteToolsViewController(), animated: true)
         }
         
+        self.settingView.callBack = { type in
+            print(type)
+        }
     }
 }
