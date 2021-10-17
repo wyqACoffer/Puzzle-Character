@@ -16,6 +16,8 @@
 		55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F4026FCEAC80003E4DF /* GlobalProperties.swift */; };
 		55362F4326FE21F60003E4DF /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F4226FE21F60003E4DF /* TextView.swift */; };
 		55362F4526FE21FF0003E4DF /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F4426FE21FF0003E4DF /* TextViewController.swift */; };
+		5591F69027188FAC002A9718 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591F68E27188FAC002A9718 /* TextFieldView.swift */; };
+		5591F69127188FAC002A9718 /* TextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591F68F27188FAC002A9718 /* TextTitleView.swift */; };
 		55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638626D4F9E200DF68D2 /* AppDelegate.swift */; };
 		55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */; };
 		55A6638B26D4F9E200DF68D2 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638A26D4F9E200DF68D2 /* Controller.swift */; };
@@ -35,6 +37,8 @@
 		55362F4026FCEAC80003E4DF /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
 		55362F4226FE21F60003E4DF /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		55362F4426FE21FF0003E4DF /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		5591F68E27188FAC002A9718 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		5591F68F27188FAC002A9718 /* TextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTitleView.swift; sourceTree = "<group>"; };
 		55A6638326D4F9E200DF68D2 /* Puzzle-Character.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle-Character.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A6638626D4F9E200DF68D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				55362F3526FB9B730003E4DF /* ToolView.swift */,
 				551F1C6A26E76A4500DA7B3A /* ToolsView.swift */,
 				55362F4226FE21F60003E4DF /* TextView.swift */,
+				5591F68E27188FAC002A9718 /* TextFieldView.swift */,
+				5591F68F27188FAC002A9718 /* TextTitleView.swift */,
 				55362F3C26FCB8C30003E4DF /* CopyBookView.swift */,
 				55362F3E26FCE80C0003E4DF /* HistoryView.swift */,
 				55362F3326FB732D0003E4DF /* Extension.swift */,
@@ -270,10 +276,10 @@
 			files = (
 				55A6638B26D4F9E200DF68D2 /* Controller.swift in Sources */,
 				55362F4326FE21F60003E4DF /* TextView.swift in Sources */,
+				5591F69127188FAC002A9718 /* TextTitleView.swift in Sources */,
 				55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */,
+				5591F69027188FAC002A9718 /* TextFieldView.swift in Sources */,
 				551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */,
-				372A529026FDB346008BD3FF /* TextFieldView.swift in Sources */,
-				372A528E26FD6EA3008BD3FF /* CharacterController.swift in Sources */,
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
 				55362F3626FB9B730003E4DF /* ToolView.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,

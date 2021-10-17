@@ -1,20 +1,30 @@
 PODS:
   - Anchorage (4.5.0)
   - LookinServer (1.0.4)
+  - Realm (10.15.1):
+    - Realm/Headers (= 10.15.1)
+  - Realm/Headers (10.15.1)
+  - RealmSwift (10.15.1):
+    - Realm (= 10.15.1)
 
 DEPENDENCIES:
   - Anchorage
   - LookinServer
+  - RealmSwift (~> 10)
 
 SPEC REPOS:
   trunk:
     - Anchorage
     - LookinServer
+    - Realm
+    - RealmSwift
 
 SPEC CHECKSUMS:
   Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
   LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
+  Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
+  RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
 
-PODFILE CHECKSUM: c3941e896859adad6290ab487036258b1e43ae19
+PODFILE CHECKSUM: ac2fdc8c915c72ad806687c99b5ed7e4cfae09a2
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.1
