@@ -27,6 +27,8 @@
 		55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */; };
 		55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E48270F70EC00C1BAEC /* FontView.swift */; };
 		55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */; };
+		55F3EC2C271D81B600B8EB02 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3EC2B271D81B600B8EB02 /* NextView.swift */; };
+		55F3EC2E271D9DC400B8EB02 /* WriteToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */; };
 		A799FA79A7EC8E963B63A69A /* Pods_Puzzle_Character.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		55EA9E48270F70EC00C1BAEC /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
+		55F3EC2B271D81B600B8EB02 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteToolsView.swift; sourceTree = "<group>"; };
 		5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle_Character.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.release.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				55EA9E3E270DE97E00C1BAEC /* BackView.swift */,
+				55F3EC2B271D81B600B8EB02 /* NextView.swift */,
 				55362F3326FB732D0003E4DF /* Extension.swift */,
 				55625C84271731B100DBAA29 /* Copybook */,
 				55625C832717314F00DBAA29 /* History */,
@@ -129,6 +134,7 @@
 				55362F3E26FCE80C0003E4DF /* HistoryView.swift */,
 				55EA9E3C270B225400C1BAEC /* HistoryLineView.swift */,
 				55EA9E48270F70EC00C1BAEC /* FontView.swift */,
+				55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -320,7 +326,9 @@
 				55362F3D26FCB8C30003E4DF /* CopybookView.swift in Sources */,
 				55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */,
 				55413BB827135D9700DE5169 /* SettingView.swift in Sources */,
+				55F3EC2E271D9DC400B8EB02 /* WriteToolsView.swift in Sources */,
 				55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */,
+				55F3EC2C271D81B600B8EB02 /* NextView.swift in Sources */,
 				55EA9E41270EEC1600C1BAEC /* NavigatonController.swift in Sources */,
 				55EA9E3D270B225400C1BAEC /* HistoryLineView.swift in Sources */,
 				551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */,

@@ -10,7 +10,7 @@ import Hero
 import UIKit
 
 class WriteToolsViewController: CustomViewController {
-    private var writeToolsDetailView = UIImageView(image: UIImage(named: "笔"))
+    private var writeToolsDetailView = WriteToolsView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,8 @@ class WriteToolsViewController: CustomViewController {
     override func configViews() {
         super.configViews()
         self.view.addSubview(self.writeToolsDetailView)
-        self.writeToolsDetailView.centerAnchors == self.view.centerAnchors
+        self.writeToolsDetailView.centerXAnchor == self.view.centerXAnchor
+        self.writeToolsDetailView.centerYAnchor == self.view.centerYAnchor + 10
+        self.isNextViewHidden(true)
     }
 }
