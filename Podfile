@@ -11,5 +11,6 @@ target 'Puzzle-Character' do
   pod 'RealmSwift', '~>10'
   pod 'MaLiang'
   pod 'Hero'
+  pod 'BSText'
 
 end

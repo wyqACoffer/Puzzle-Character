@@ -14,17 +14,17 @@ class NextView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.confifViews()
+        self.configViews()
     }
     
-    private func confifViews() {
+    private func configViews() {
         self.addSubview(self.imageView)
         self.imageView.edgeAnchors == self.edgeAnchors
         self.imageView.isUserInteractionEnabled = true
-        self.imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapBackView)))
+        self.imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapNextView)))
     }
 
-    @objc private func didTapBackView() {
+    @objc private func didTapNextView() {
         self.callback?()
     }
     

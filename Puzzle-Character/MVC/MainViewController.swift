@@ -7,6 +7,7 @@
 
 import Anchorage
 import Hero
+//import RealmSwift
 import UIKit
 
 class MainViewController: UIViewController {
@@ -58,6 +59,10 @@ class MainViewController: UIViewController {
             self.copybookView.isHidden = true
             self.historyView.isHidden = true
             self.settingView.isHidden = false
+        }
+        self.toolsView.addViewCallback = { [weak self] in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(AddNewViewController(), animated: true)
         }
         self.historyView.fontViewCallback = { [weak self] in
             guard let self = self else { return }

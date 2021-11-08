@@ -18,6 +18,8 @@ class ToolsView: UIView {
     var copybookCallback: Block?
     var historyCallback: Block?
     var settingCallback: Block?
+    var pencilViewCallback: Block?
+    var addViewCallback: Block?
     // Todo
     private var copybookView = UIImageView(image: UIImage(named: "字帖示例"))
 
@@ -37,6 +39,8 @@ class ToolsView: UIView {
         self.copybookStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapCopybook)))
         self.historyStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapHistory)))
         self.settingStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapSetting)))
+        self.pencilView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapPencilView)))
+        self.addView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapAddView)))
         
         self.addView.centerYAnchor == self.centerYAnchor
         self.addView.rightAnchor == self.rightAnchor - 24
@@ -65,6 +69,14 @@ class ToolsView: UIView {
         self.configToolsColor(type: .setting)
         self.hasToolsShowed(false)
         self.settingCallback?()
+    }
+    
+    @objc private func didTapPencilView() {
+        self.pencilViewCallback?()
+    }
+    
+    @objc private func didTapAddView() {
+        self.addViewCallback?()
     }
     
     private func configToolColor(stackView: UIStackView, color: UIColor) {
