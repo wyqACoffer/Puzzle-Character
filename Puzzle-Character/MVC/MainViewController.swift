@@ -13,7 +13,7 @@ import UIKit
 class MainViewController: UIViewController {
     private var toolsView = ToolsView()
     // Todo
-    private var copybookView = CopybookView(image: UIImage(named: "字帖示例"))
+    private var copybookView = CopybookView()
     private var historyView = HistoryView()
     private var settingView = SettingView()
     
@@ -31,10 +31,10 @@ class MainViewController: UIViewController {
         self.toolsView.rightAnchor == self.view.rightAnchor - 35
         self.toolsView.heightAnchor == 65
         self.toolsView.centerXAnchor == self.view.centerXAnchor
-        // Todo
+        
         self.view.addSubview(self.copybookView)
-        self.copybookView.topAnchor == self.toolsView.bottomAnchor + 52
-        self.copybookView.leftAnchor == self.view.leftAnchor + 77
+        self.copybookView.topAnchor == self.toolsView.bottomAnchor + 42
+        self.copybookView.centerXAnchor == self.view.centerXAnchor
         self.view.addSubview(self.historyView)
         self.historyView.centerAnchors == self.view.centerAnchors
         self.view.addSubview(self.settingView)
