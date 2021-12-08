@@ -10,7 +10,7 @@ import UIKit
 
 class SingleCopybookView: UICollectionViewCell {
     private var deleteView = UIImageView(image: UIImage(named: "delete"))
-    private var mainBGView = UIImageView(image: UIImage(named: "mainBG"))
+    private var mainBGView = UIImageView(image: UIImage(named: "字帖背景"))
     private var textLabel = UILabel()
     
     override init(frame: CGRect) {

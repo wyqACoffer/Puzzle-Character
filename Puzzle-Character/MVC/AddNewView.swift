@@ -34,22 +34,24 @@ class AddNewView: UIView {
         self.addSubview(self.stackView)
         self.stackView.centerAnchors == self.centerAnchors
         self.stackView.edgeAnchors == self.edgeAnchors
+        
         self.addSubview(self.textView)
+        self.textView.topAnchor == self.addBGView.topAnchor + 30
+        self.textView.bottomAnchor == self.addBGView.bottomAnchor - 30
+        self.textView.leftAnchor == self.addBGView.leftAnchor + 30
+        self.textView.rightAnchor == self.addBGView.rightAnchor - 30
+        
         self.textView.backgroundColor = .clear
         self.textView.textColor = .gray
         self.textView.textAlignment = .left
         self.textView.font = .preferredFont(forTextStyle: .body)
         self.textView.text = gPlaceholderText
-        self.textView.topAnchor == self.addBGView.topAnchor + 30
-        self.textView.bottomAnchor == self.addBGView.bottomAnchor - 30
-        self.textView.leftAnchor == self.addBGView.leftAnchor + 30
-        self.textView.rightAnchor == self.addBGView.rightAnchor - 30
         self.textView.isEditable = false
         self.textView.isUserInteractionEnabled = true
-        self.textView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTaptextView)))
+        self.textView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapTextView)))
     }
     
-    @objc private func didTaptextView() {
+    @objc private func didTapTextView() {
         guard let labelText = self.textView.text else { return }
         let oldText = (labelText != gPlaceholderText ? labelText : "")
         if let newText = self.callBack?(oldText) {
@@ -58,8 +60,8 @@ class AddNewView: UIView {
     }
     
     func setText(text: String) {
+        self.textView.textColor = (text == gPlaceholderText ? .gray : .black)
         self.textView.text = text
-        self.textView.textColor = .black
     }
     
     required init?(coder: NSCoder) {

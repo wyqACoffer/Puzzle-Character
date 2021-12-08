@@ -12,5 +12,5 @@ target 'Puzzle-Character' do
   pod 'MaLiang'
   pod 'Hero'
   pod 'BSText'
-
+  pod 'SVProgressHUD'
 end

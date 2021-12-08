@@ -20,8 +20,10 @@ class AddNewViewController: CustomViewController {
     override func configViews() {
         super.configViews()
         self.isNextViewHidden(false)
+        
         self.view.addSubview(self.addNewView)
         self.addNewView.centerAnchors == self.view.centerAnchors
+        
         self.view.addSubview(self.textEditView)
         self.textEditView.edgeAnchors == self.view.edgeAnchors
         self.textEditView.isHidden = true
@@ -36,13 +38,14 @@ class AddNewViewController: CustomViewController {
         }
         self.textEditView.callBack = {
             let text = self.textEditView.getText()
-            if text != gPlaceholderText {
-                self.addNewView.setText(text: text)
-            }
+            self.addNewView.setText(text: text)
             UIView.transition(from: self.textEditView, to: self.addNewView, duration: 0.3, options: .transitionCrossDissolve, completion: nil)
             self.configViews()
         }
-        
+        self.nextView.callback = { [weak self] in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(SelectFontViewController(), animated: true)
+        }
     }
     
     private func didTapTextView() {

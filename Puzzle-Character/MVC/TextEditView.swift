@@ -32,8 +32,8 @@ class TextEditView: UIView {
         self.textView.backgroundColor = gColorForBackgroundView
         self.textView.font = .preferredFont(forTextStyle: .largeTitle, compatibleWith: .current)
         self.textView.textAlignment = .natural
-        self.textView.placeholderTextColor = .gray
-        self.textView.placeholderText = gPlaceholderText
+//        self.textView.placeholderTextColor = .gray
+//        self.textView.placeholderText = gPlaceholderText
     }
     
     private func configCallbacks() {

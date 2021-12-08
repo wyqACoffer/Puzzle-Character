@@ -32,8 +32,15 @@
 		55FF305D272158D300B92B65 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF305C272158D300B92B65 /* AddNewView.swift */; };
 		55FF305F27215A7600B92B65 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF305E27215A7600B92B65 /* AddNewViewController.swift */; };
 		A799FA79A7EC8E963B63A69A /* Pods_Puzzle_Character.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */; };
-		E6A685152739158700B62868 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A685142739158700B62868 /* MainView.swift */; };
 		E6B273222736645000868F8B /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B273212736645000868F8B /* TextEditView.swift */; };
+		E6DE5FEF275FA34400ED17A9 /* SelectFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */; };
+		E6DE5FF1275FA65500ED17A9 /* SelectFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */; };
+		E6DE5FF3276088D900ED17A9 /* SelectPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */; };
+		E6DE5FF52760895100ED17A9 /* SelectPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */; };
+		E6DE5FFA2760A41100ED17A9 /* SelectShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */; };
+		E6DE5FFC2760A45300ED17A9 /* SelectShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */; };
+		E6DE5FFE2760AC3A00ED17A9 /* ResultShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */; };
+		E6DE60002760AC6300ED17A9 /* ResultShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +73,15 @@
 		55FF305E27215A7600B92B65 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle_Character.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.release.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.release.xcconfig"; sourceTree = "<group>"; };
-		E6A685142739158700B62868 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E6B273212736645000868F8B /* TextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditView.swift; sourceTree = "<group>"; };
+		E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFontViewController.swift; sourceTree = "<group>"; };
+		E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFontView.swift; sourceTree = "<group>"; };
+		E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaperViewController.swift; sourceTree = "<group>"; };
+		E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaperView.swift; sourceTree = "<group>"; };
+		E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectShapeViewController.swift; sourceTree = "<group>"; };
+		E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectShapeView.swift; sourceTree = "<group>"; };
+		E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultShowViewController.swift; sourceTree = "<group>"; };
+		E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultShowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,10 @@
 				55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */,
 				55EA9E42270EF1C500C1BAEC /* WriteToolsViewController.swift */,
 				55FF305E27215A7600B92B65 /* AddNewViewController.swift */,
+				E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */,
+				E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */,
+				E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */,
+				E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -130,7 +148,6 @@
 				55EA9E3E270DE97E00C1BAEC /* BackView.swift */,
 				55F3EC2B271D81B600B8EB02 /* NextView.swift */,
 				55362F3326FB732D0003E4DF /* Extension.swift */,
-				E6A685162739158C00B62868 /* Main */,
 				55625C84271731B100DBAA29 /* Copybook */,
 				55625C832717314F00DBAA29 /* History */,
 				55625C85271731C100DBAA29 /* Setting */,
@@ -156,6 +173,10 @@
 				55362F3C26FCB8C30003E4DF /* CopybookView.swift */,
 				55FF305C272158D300B92B65 /* AddNewView.swift */,
 				E6B273212736645000868F8B /* TextEditView.swift */,
+				E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */,
+				E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */,
+				E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */,
+				E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */,
 			);
 			name = Copybook;
 			sourceTree = "<group>";
@@ -213,14 +234,6 @@
 				B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E6A685162739158C00B62868 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				E6A685142739158700B62868 /* MainView.swift */,
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,14 +350,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A6638B26D4F9E200DF68D2 /* MainViewController.swift in Sources */,
-				E6A685152739158700B62868 /* MainView.swift in Sources */,
 				E6B273222736645000868F8B /* TextEditView.swift in Sources */,
 				55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */,
+				E6DE5FF3276088D900ED17A9 /* SelectPaperViewController.swift in Sources */,
 				551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */,
+				E6DE5FEF275FA34400ED17A9 /* SelectFontViewController.swift in Sources */,
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
 				55EA9E43270EF1C500C1BAEC /* WriteToolsViewController.swift in Sources */,
 				55EA9E3B270B21B500C1BAEC /* HistoryViewController.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,
+				E6DE60002760AC6300ED17A9 /* ResultShowView.swift in Sources */,
+				E6DE5FFC2760A45300ED17A9 /* SelectShapeView.swift in Sources */,
 				55362F3D26FCB8C30003E4DF /* CopybookView.swift in Sources */,
 				55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */,
 				55FF305D272158D300B92B65 /* AddNewView.swift in Sources */,
@@ -352,14 +368,18 @@
 				55F3EC2E271D9DC400B8EB02 /* WriteToolsView.swift in Sources */,
 				55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */,
 				55F3EC2C271D81B600B8EB02 /* NextView.swift in Sources */,
+				E6DE5FFE2760AC3A00ED17A9 /* ResultShowViewController.swift in Sources */,
 				55FF305F27215A7600B92B65 /* AddNewViewController.swift in Sources */,
 				55EA9E41270EEC1600C1BAEC /* NavigatonController.swift in Sources */,
 				55EA9E3D270B225400C1BAEC /* HistoryLineView.swift in Sources */,
 				551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */,
 				55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */,
+				E6DE5FFA2760A41100ED17A9 /* SelectShapeViewController.swift in Sources */,
 				55EA9E3F270DE97E00C1BAEC /* BackView.swift in Sources */,
+				E6DE5FF1275FA65500ED17A9 /* SelectFontView.swift in Sources */,
 				55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */,
 				55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */,
+				E6DE5FF52760895100ED17A9 /* SelectPaperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
