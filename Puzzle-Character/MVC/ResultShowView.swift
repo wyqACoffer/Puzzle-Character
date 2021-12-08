@@ -7,12 +7,15 @@
 
 import Anchorage
 import UIKit
+import SVProgressHUD
 
 class ResultShowView: UIView {
     private var resultShowView = UIImageView(image: UIImage(named: "效果展示"))
     private var showView = UIImageView(image: UIImage(named: "导出示例"))
     private var exportView = UIImageView(image: UIImage(named: "导出字帖"))
     private var shareView = UIImageView(image: UIImage(named: "分享字帖"))
+    var exportCallback: ((UIImage) -> ())?
+    var shareCallback: ((UIImage) -> ())?
     
     private var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -47,18 +50,17 @@ class ResultShowView: UIView {
         
         self.exportView.isUserInteractionEnabled = true
         self.exportView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapExportView)))
+        self.shareView.isUserInteractionEnabled = true
+        self.shareView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapShareView)))
     }
     
     @objc private func didTapExportView() {
-        UIImageWriteToSavedPhotosAlbum(self.showView.image, self, #selector(save(image:didFinishSavingWithError:contextInfo:)), nil)
+        guard let image = self.showView.image else { return }
+        self.exportCallback?(image)
     }
-    private func save(image:UIImage, didFinishSavingWithError:NSError?,contextInfo:AnyObject) {
-         if didFinishSavingWithError != nil {
-             SVProgressHUD.showError(withStatus: "保存失败")
-             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-         } else {
-             SVProgressHUD.showSuccess(withStatus: "保存成功")
-             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
-         }
-     }
+    
+    @objc private func didTapShareView() {
+        guard let image = self.showView.image else { return }
+        self.shareCallback?(image)
+    }
 }

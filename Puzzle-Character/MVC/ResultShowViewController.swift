@@ -28,8 +28,35 @@ class ResultShowViewController: CustomViewController {
     
     override func configCallBack() {
         super.configCallBack()
-//        self.nextView.callback = {
-//            self.navigationController?.pushViewController(SelectPaperViewController(), animated: true)
-//        }
+        self.nextView.callback = {
+            self.navigationController?.pushViewController(WriteWorkViewController(), animated: true)
+        }
+        
+        self.resultShowView.exportCallback = { [weak self] image in
+            guard let self = self else  { return }
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.save(image:didFinishSavingWithError:contextInfo:)), nil)
+        }
+        
+        self.resultShowView.shareCallback = { [weak self] image in
+            guard let self = self else  { return }
+            let items: [AnyObject] = [image as AnyObject]
+            let activity = UIActivityViewController(activityItems: items, applicationActivities: nil)
+            activity.popoverPresentationController!.sourceView = self.resultShowView;
+            self.present(activity, animated: true, completion: nil)
+        }
     }
+    
+    @objc func save(image:UIImage, didFinishSavingWithError:NSError?,contextInfo:AnyObject) {
+         if didFinishSavingWithError != nil {
+             let alert = UIAlertController(title: "操作", message: "保存失败", preferredStyle: .alert)
+             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+             alert.addAction(alertAction)
+             self.present(alert, animated: true, completion: nil)
+         } else {
+             let alert = UIAlertController(title: "操作", message: "保存成功", preferredStyle: .alert)
+             let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+             alert.addAction(alertAction)
+             self.present(alert, animated: true, completion: nil)
+         }
+     }
 }
