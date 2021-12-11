@@ -16,13 +16,13 @@ extension UIImageView {
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         if self.isUserInteractionEnabled {
-            self.alpha = 0.6
+            self.alpha = 0.9
         }
     }
     open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
         if self.isUserInteractionEnabled {
-            self.alpha = 0.6
+            self.alpha = 0.9
         }
     }
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -56,5 +56,12 @@ extension UIStackView {
         self.axis = .horizontal
         self.alignment = .center
         self.distribution = .equalSpacing
+    }
+}
+
+extension String {
+    var floatValue: CGFloat {
+        let db = Double(self) ?? 0
+        return CGFloat(db)
     }
 }

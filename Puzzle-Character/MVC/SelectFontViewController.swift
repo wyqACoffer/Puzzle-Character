@@ -22,7 +22,7 @@ class SelectFontViewController: CustomViewController {
         
         self.view.addSubview(self.selectFontView)
         self.selectFontView.heightAnchor == 750
-        self.selectFontView.widthAnchor == 800
+        self.selectFontView.widthAnchor == 900
         self.selectFontView.centerAnchors == self.view.centerAnchors
     }
     

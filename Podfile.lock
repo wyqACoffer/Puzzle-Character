@@ -2,6 +2,9 @@ PODS:
   - Anchorage (4.5.0)
   - BSText (1.1.2):
     - YYImage
+  - Chrysan (2.0.4):
+    - SnapKit (~> 5.0)
+  - Comet (1.6.2)
   - Hero (1.6.1)
   - LookinServer (1.0.4)
   - MaLiang (2.9.2)
@@ -10,43 +13,57 @@ PODS:
   - Realm/Headers (10.15.1)
   - RealmSwift (10.15.1):
     - Realm (= 10.15.1)
+  - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
+  - Zip (2.1.1)
 
 DEPENDENCIES:
   - Anchorage
   - BSText
+  - Chrysan
+  - Comet
   - Hero
   - LookinServer
   - MaLiang
   - RealmSwift (~> 10)
+  - SnapKit
   - SVProgressHUD
+  - Zip
 
 SPEC REPOS:
   trunk:
     - Anchorage
     - BSText
+    - Chrysan
+    - Comet
     - Hero
     - LookinServer
     - MaLiang
     - Realm
     - RealmSwift
+    - SnapKit
     - SVProgressHUD
     - YYImage
+    - Zip
 
 SPEC CHECKSUMS:
   Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
   BSText: 70f0da93875c5f1dd6ab9e27fc22b1e50a41b66c
+  Chrysan: d8607b02a90e7b4a10129c5f3878a8e565902e7a
+  Comet: ec129472bd2b9683c13aefa939703cc3ef0efb14
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
   MaLiang: 7cf6c70e37577b5ec1b34add37fa6d58808f5451
   Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
   RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  Zip: 414f59909701fda9a84ab774ebe0f5449b1082cc
 
-PODFILE CHECKSUM: 1ce1dfe151a460e63c5b966f5c25d3f3ed2e800c
+PODFILE CHECKSUM: df178715beee1a5d7dfa8c0a6020c3e8d0956371
 
 COCOAPODS: 1.10.1

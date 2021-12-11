@@ -24,6 +24,7 @@ class SingleCopybookView: UICollectionViewCell {
         self.mainBGView.heightAnchor == 250
         self.mainBGView.widthAnchor == 250
         self.mainBGView.centerAnchors == self.centerAnchors
+        self.mainBGView.layer.cornerRadius = 4
         self.addSubview(self.deleteView)
         self.deleteView.heightAnchor == 40
         self.deleteView.widthAnchor == 40
@@ -99,6 +100,11 @@ class CopybookView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let imageView = UIImageView(image: UIImage(named: "导出示例"))
+        cell.addSubview(imageView)
+        imageView.heightAnchor == 250
+        imageView.widthAnchor == 250
+        imageView.centerAnchors == cell.centerAnchors
         return cell;
     }
 }

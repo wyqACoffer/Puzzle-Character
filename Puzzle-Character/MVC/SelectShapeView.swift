@@ -15,14 +15,6 @@ class SelectShapeView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     private var shapeView = UIImageView(image: UIImage(named: gShapePickerNames[0]))
     private var pickerView = UIPickerView()
     
-    private var stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.alignment = .center
-        stackView.axis = .vertical
-        stackView.spacing = 60
-        return stackView
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configViews()
@@ -33,11 +25,18 @@ class SelectShapeView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     private func configViews() {
-        self.stackView.addArrangedSubview(self.selectShapeView)
-        self.stackView.addArrangedSubview(self.shapeSelecor)
-        self.stackView.addArrangedSubview(self.shapeView)
-        self.addSubview(self.stackView)
-        self.stackView.centerAnchors == self.centerAnchors
+        self.addSubview(selectShapeView)
+        self.selectShapeView.topAnchor == self.topAnchor
+        self.selectShapeView.centerXAnchor == self.centerXAnchor
+        
+        self.shapeView.isUserInteractionEnabled = true
+        self.addSubview(self.shapeView)
+        self.shapeView.centerXAnchor == self.centerXAnchor
+        self.shapeView.centerYAnchor == self.centerYAnchor - 10
+        self.shapeView.addSubview(self.shapeSelecor)
+        self.shapeSelecor.topAnchor == self.shapeView.topAnchor + 250
+        self.shapeSelecor.rightAnchor == self.rightAnchor + 40
+        
         self.shapeSelecor.isUserInteractionEnabled = true
         self.shapeSelecor.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapShapeSelector)))
         

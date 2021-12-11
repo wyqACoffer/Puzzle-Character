@@ -22,14 +22,16 @@ class ResultShowViewController: CustomViewController {
         
         self.view.addSubview(self.resultShowView)
         self.resultShowView.heightAnchor == 750
-        self.resultShowView.widthAnchor == 800
+        self.resultShowView.widthAnchor == 900
         self.resultShowView.centerAnchors == self.view.centerAnchors
     }
     
     override func configCallBack() {
         super.configCallBack()
         self.nextView.callback = {
-            self.navigationController?.pushViewController(WriteWorkViewController(), animated: true)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(identifier: "WriteWorkViewController") as WriteWorkViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
         
         self.resultShowView.exportCallback = { [weak self] image in

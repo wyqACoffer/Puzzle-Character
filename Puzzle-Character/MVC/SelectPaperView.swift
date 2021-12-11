@@ -13,7 +13,7 @@ class SelectPaperView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     private var paperSelecor = UIImageView(image: UIImage(named: "选择框"))
     private var paperLabel = UILabel()
     private var paperView = UIImageView(image: UIImage(named: gPaperPickerNames[0]))
-    private var paperExplainView = UIImageView(image: UIImage(named: "\(gPaperPickerNames[1])介绍"))
+    private var paperExplainView = UIImageView(image: UIImage(named: "\(gPaperPickerNames[0])介绍"))
     private var pickerView = UIPickerView()
     
     private var stackView: UIStackView = {
@@ -101,5 +101,6 @@ class SelectPaperView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.paperLabel.text = gPaperPickerNames[row]
         self.paperView.image = UIImage(named: gPaperPickerNames[row])
+        self.paperExplainView.image = UIImage(named: "\(gPaperPickerNames[row])介绍")
     }
 }
