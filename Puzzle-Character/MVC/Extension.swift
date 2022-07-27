@@ -13,6 +13,30 @@ extension UIImageView {
     convenience init(imageName: String) {
         self.init(image: UIImage(named: imageName)?.withTintColor(gColorNotSelected))
     }
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        if self.isUserInteractionEnabled {
+            self.alpha = 0.9
+        }
+    }
+    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        if self.isUserInteractionEnabled {
+            self.alpha = 0.9
+        }
+    }
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        if self.isUserInteractionEnabled {
+            self.alpha = 1
+        }
+    }
+    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        if self.isUserInteractionEnabled {
+            self.alpha = 1
+        }
+    }
 }
 
 extension UIStackView {
@@ -32,5 +56,12 @@ extension UIStackView {
         self.axis = .horizontal
         self.alignment = .center
         self.distribution = .equalSpacing
+    }
+}
+
+extension String {
+    var floatValue: CGFloat {
+        let db = Double(self) ?? 0
+        return CGFloat(db)
     }
 }

@@ -10,10 +10,10 @@
 		551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6826E76A3600DA7B3A /* Enums.swift */; };
 		551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F1C6A26E76A4500DA7B3A /* ToolsView.swift */; };
 		55362F3426FB732D0003E4DF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3326FB732D0003E4DF /* Extension.swift */; };
-		55362F3626FB9B730003E4DF /* ToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3526FB9B730003E4DF /* ToolView.swift */; };
-		55362F3D26FCB8C30003E4DF /* CopyBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3C26FCB8C30003E4DF /* CopyBookView.swift */; };
+		55362F3D26FCB8C30003E4DF /* CopybookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3C26FCB8C30003E4DF /* CopybookView.swift */; };
 		55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F3E26FCE80C0003E4DF /* HistoryView.swift */; };
 		55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55362F4026FCEAC80003E4DF /* GlobalProperties.swift */; };
+		55413BB827135D9700DE5169 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55413BB727135D9700DE5169 /* SettingView.swift */; };
 		55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638626D4F9E200DF68D2 /* AppDelegate.swift */; };
 		55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */; };
 		55A6638B26D4F9E200DF68D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A6638A26D4F9E200DF68D2 /* MainViewController.swift */; };
@@ -27,7 +27,27 @@
 		55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */; };
 		55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E48270F70EC00C1BAEC /* FontView.swift */; };
 		55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */; };
+		55F3EC2C271D81B600B8EB02 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3EC2B271D81B600B8EB02 /* NextView.swift */; };
+		55F3EC2E271D9DC400B8EB02 /* WriteToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */; };
+		55FF305D272158D300B92B65 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF305C272158D300B92B65 /* AddNewView.swift */; };
+		55FF305F27215A7600B92B65 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FF305E27215A7600B92B65 /* AddNewViewController.swift */; };
 		A799FA79A7EC8E963B63A69A /* Pods_Puzzle_Character.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */; };
+		E68184CD2763B2F6004A0146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68184CC2763B2F6004A0146 /* Main.storyboard */; };
+		E69FDA822760D43C003801AD /* WriteWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FDA812760D43C003801AD /* WriteWorkViewController.swift */; };
+		E69FDA842760D7A4003801AD /* WritePensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FDA832760D7A4003801AD /* WritePensView.swift */; };
+		E6B273222736645000868F8B /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B273212736645000868F8B /* TextEditView.swift */; };
+		E6DE5FEF275FA34400ED17A9 /* SelectFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */; };
+		E6DE5FF1275FA65500ED17A9 /* SelectFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */; };
+		E6DE5FF3276088D900ED17A9 /* SelectPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */; };
+		E6DE5FF52760895100ED17A9 /* SelectPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */; };
+		E6DE5FFA2760A41100ED17A9 /* SelectShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */; };
+		E6DE5FFC2760A45300ED17A9 /* SelectShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */; };
+		E6DE5FFE2760AC3A00ED17A9 /* ResultShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */; };
+		E6DE60002760AC6300ED17A9 /* ResultShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */; };
+		E6FC8274276341190091AC11 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC8273276341190091AC11 /* WorkView.swift */; };
+		E6FC828127635E070091AC11 /* 笔迹1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6FC827E27635E070091AC11 /* 笔迹1.png */; };
+		E6FC828227635E070091AC11 /* 笔迹3.png in Resources */ = {isa = PBXBuildFile; fileRef = E6FC827F27635E070091AC11 /* 笔迹3.png */; };
+		E6FC828327635E070091AC11 /* 笔迹2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6FC828027635E070091AC11 /* 笔迹2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +55,10 @@
 		551F1C6826E76A3600DA7B3A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		551F1C6A26E76A4500DA7B3A /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		55362F3326FB732D0003E4DF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		55362F3526FB9B730003E4DF /* ToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolView.swift; sourceTree = "<group>"; };
-		55362F3C26FCB8C30003E4DF /* CopyBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyBookView.swift; sourceTree = "<group>"; };
+		55362F3C26FCB8C30003E4DF /* CopybookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopybookView.swift; sourceTree = "<group>"; };
 		55362F3E26FCE80C0003E4DF /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		55362F4026FCEAC80003E4DF /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
+		55413BB727135D9700DE5169 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		55A6638326D4F9E200DF68D2 /* Puzzle-Character.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puzzle-Character.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A6638626D4F9E200DF68D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A6638826D4F9E200DF68D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +74,28 @@
 		55EA9E44270EF23C00C1BAEC /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		55EA9E48270F70EC00C1BAEC /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
+		55F3EC2B271D81B600B8EB02 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteToolsView.swift; sourceTree = "<group>"; };
+		55FF305C272158D300B92B65 /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
+		55FF305E27215A7600B92B65 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		5EA6BE7848BD04ACEB26FF24 /* Pods_Puzzle_Character.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle_Character.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle-Character.release.xcconfig"; path = "Target Support Files/Pods-Puzzle-Character/Pods-Puzzle-Character.release.xcconfig"; sourceTree = "<group>"; };
+		E68184CC2763B2F6004A0146 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E69FDA812760D43C003801AD /* WriteWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteWorkViewController.swift; sourceTree = "<group>"; };
+		E69FDA832760D7A4003801AD /* WritePensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePensView.swift; sourceTree = "<group>"; };
+		E6B273212736645000868F8B /* TextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditView.swift; sourceTree = "<group>"; };
+		E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFontViewController.swift; sourceTree = "<group>"; };
+		E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFontView.swift; sourceTree = "<group>"; };
+		E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaperViewController.swift; sourceTree = "<group>"; };
+		E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaperView.swift; sourceTree = "<group>"; };
+		E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectShapeViewController.swift; sourceTree = "<group>"; };
+		E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectShapeView.swift; sourceTree = "<group>"; };
+		E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultShowViewController.swift; sourceTree = "<group>"; };
+		E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultShowView.swift; sourceTree = "<group>"; };
+		E6FC8273276341190091AC11 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		E6FC827E27635E070091AC11 /* 笔迹1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笔迹1.png"; sourceTree = "<group>"; };
+		E6FC827F27635E070091AC11 /* 笔迹3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笔迹3.png"; sourceTree = "<group>"; };
+		E6FC828027635E070091AC11 /* 笔迹2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笔迹2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +138,12 @@
 				55EA9E3A270B21B500C1BAEC /* HistoryViewController.swift */,
 				55EA9E4A270F84C700C1BAEC /* FontDetailViewController.swift */,
 				55EA9E42270EF1C500C1BAEC /* WriteToolsViewController.swift */,
+				55FF305E27215A7600B92B65 /* AddNewViewController.swift */,
+				E6DE5FEE275FA34400ED17A9 /* SelectFontViewController.swift */,
+				E6DE5FF2276088D900ED17A9 /* SelectPaperViewController.swift */,
+				E6DE5FF92760A41100ED17A9 /* SelectShapeViewController.swift */,
+				E6DE5FFD2760AC3A00ED17A9 /* ResultShowViewController.swift */,
+				E69FDA812760D43C003801AD /* WriteWorkViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -114,16 +160,50 @@
 		55362F3226FB72D70003E4DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				55362F3526FB9B730003E4DF /* ToolView.swift */,
-				551F1C6A26E76A4500DA7B3A /* ToolsView.swift */,
-				55362F3C26FCB8C30003E4DF /* CopyBookView.swift */,
+				55EA9E3E270DE97E00C1BAEC /* BackView.swift */,
+				55F3EC2B271D81B600B8EB02 /* NextView.swift */,
+				55362F3326FB732D0003E4DF /* Extension.swift */,
+				55625C84271731B100DBAA29 /* Copybook */,
+				55625C832717314F00DBAA29 /* History */,
+				55625C85271731C100DBAA29 /* Setting */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		55625C832717314F00DBAA29 /* History */ = {
+			isa = PBXGroup;
+			children = (
 				55362F3E26FCE80C0003E4DF /* HistoryView.swift */,
 				55EA9E3C270B225400C1BAEC /* HistoryLineView.swift */,
 				55EA9E48270F70EC00C1BAEC /* FontView.swift */,
-				55EA9E3E270DE97E00C1BAEC /* BackView.swift */,
-				55362F3326FB732D0003E4DF /* Extension.swift */,
+				55F3EC2D271D9DC400B8EB02 /* WriteToolsView.swift */,
 			);
-			name = Views;
+			name = History;
+			sourceTree = "<group>";
+		};
+		55625C84271731B100DBAA29 /* Copybook */ = {
+			isa = PBXGroup;
+			children = (
+				551F1C6A26E76A4500DA7B3A /* ToolsView.swift */,
+				55362F3C26FCB8C30003E4DF /* CopybookView.swift */,
+				55FF305C272158D300B92B65 /* AddNewView.swift */,
+				E6B273212736645000868F8B /* TextEditView.swift */,
+				E6DE5FF0275FA65500ED17A9 /* SelectFontView.swift */,
+				E6DE5FF42760895100ED17A9 /* SelectPaperView.swift */,
+				E6DE5FFB2760A45300ED17A9 /* SelectShapeView.swift */,
+				E6DE5FFF2760AC6300ED17A9 /* ResultShowView.swift */,
+				E69FDA832760D7A4003801AD /* WritePensView.swift */,
+				E6FC8273276341190091AC11 /* WorkView.swift */,
+			);
+			name = Copybook;
+			sourceTree = "<group>";
+		};
+		55625C85271731C100DBAA29 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				55413BB727135D9700DE5169 /* SettingView.swift */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		55A6637A26D4F9E200DF68D2 = {
@@ -149,7 +229,9 @@
 			children = (
 				551F1C6D26E76AAA00DA7B3A /* Delegate */,
 				551F1C6C26E76A6200DA7B3A /* MVC */,
+				E6FC8277276348E70091AC11 /* Textures */,
 				55A6638F26D4F9E400DF68D2 /* Assets.xcassets */,
+				E68184CC2763B2F6004A0146 /* Main.storyboard */,
 				55A6639126D4F9E400DF68D2 /* LaunchScreen.storyboard */,
 				55A6639426D4F9E400DF68D2 /* Info.plist */,
 			);
@@ -171,6 +253,16 @@
 				B86E66A0AA88272596584E7A /* Pods-Puzzle-Character.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6FC8277276348E70091AC11 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC827E27635E070091AC11 /* 笔迹1.png */,
+				E6FC828027635E070091AC11 /* 笔迹2.png */,
+				E6FC827F27635E070091AC11 /* 笔迹3.png */,
+			);
+			path = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +324,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68184CD2763B2F6004A0146 /* Main.storyboard in Resources */,
+				E6FC828327635E070091AC11 /* 笔迹2.png in Resources */,
+				E6FC828127635E070091AC11 /* 笔迹1.png in Resources */,
 				55A6639326D4F9E400DF68D2 /* LaunchScreen.storyboard in Resources */,
+				E6FC828227635E070091AC11 /* 笔迹3.png in Resources */,
 				55A6639026D4F9E400DF68D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,23 +383,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A6638B26D4F9E200DF68D2 /* MainViewController.swift in Sources */,
+				E6B273222736645000868F8B /* TextEditView.swift in Sources */,
 				55A6638726D4F9E200DF68D2 /* AppDelegate.swift in Sources */,
+				E6DE5FF3276088D900ED17A9 /* SelectPaperViewController.swift in Sources */,
 				551F1C6B26E76A4500DA7B3A /* ToolsView.swift in Sources */,
+				E6FC8274276341190091AC11 /* WorkView.swift in Sources */,
+				E69FDA822760D43C003801AD /* WriteWorkViewController.swift in Sources */,
+				E6DE5FEF275FA34400ED17A9 /* SelectFontViewController.swift in Sources */,
 				55362F3426FB732D0003E4DF /* Extension.swift in Sources */,
-				55362F3626FB9B730003E4DF /* ToolView.swift in Sources */,
 				55EA9E43270EF1C500C1BAEC /* WriteToolsViewController.swift in Sources */,
 				55EA9E3B270B21B500C1BAEC /* HistoryViewController.swift in Sources */,
 				55A6638926D4F9E200DF68D2 /* SceneDelegate.swift in Sources */,
-				55362F3D26FCB8C30003E4DF /* CopyBookView.swift in Sources */,
+				E6DE60002760AC6300ED17A9 /* ResultShowView.swift in Sources */,
+				E6DE5FFC2760A45300ED17A9 /* SelectShapeView.swift in Sources */,
+				55362F3D26FCB8C30003E4DF /* CopybookView.swift in Sources */,
 				55362F3F26FCE80D0003E4DF /* HistoryView.swift in Sources */,
+				55FF305D272158D300B92B65 /* AddNewView.swift in Sources */,
+				E69FDA842760D7A4003801AD /* WritePensView.swift in Sources */,
+				55413BB827135D9700DE5169 /* SettingView.swift in Sources */,
+				55F3EC2E271D9DC400B8EB02 /* WriteToolsView.swift in Sources */,
 				55EA9E4B270F84C700C1BAEC /* FontDetailViewController.swift in Sources */,
+				55F3EC2C271D81B600B8EB02 /* NextView.swift in Sources */,
+				E6DE5FFE2760AC3A00ED17A9 /* ResultShowViewController.swift in Sources */,
+				55FF305F27215A7600B92B65 /* AddNewViewController.swift in Sources */,
 				55EA9E41270EEC1600C1BAEC /* NavigatonController.swift in Sources */,
 				55EA9E3D270B225400C1BAEC /* HistoryLineView.swift in Sources */,
 				551F1C6926E76A3600DA7B3A /* Enums.swift in Sources */,
 				55EA9E49270F70EC00C1BAEC /* FontView.swift in Sources */,
+				E6DE5FFA2760A41100ED17A9 /* SelectShapeViewController.swift in Sources */,
 				55EA9E3F270DE97E00C1BAEC /* BackView.swift in Sources */,
+				E6DE5FF1275FA65500ED17A9 /* SelectFontView.swift in Sources */,
 				55362F4126FCEAC90003E4DF /* GlobalProperties.swift in Sources */,
 				55EA9E45270EF23C00C1BAEC /* CustomViewController.swift in Sources */,
+				E6DE5FF52760895100ED17A9 /* SelectPaperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

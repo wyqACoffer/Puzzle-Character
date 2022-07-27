@@ -12,12 +12,14 @@ class ToolsView: UIView {
     private var copybookStackView = UIStackView(tool: [UIImageView(imageName: "瓦当"), UIImageView(imageName: "字帖")])
     private var historyStackView = UIStackView(tool: [UIImageView(imageName: "瓦当"), UIImageView(imageName: "历史")])
     private var settingStackView = UIStackView(tool: [UIImageView(imageName: "瓦当"), UIImageView(imageName: "设置")])
-    private var pencilView = ToolView(image: UIImage(named: "pencil"))
-    private var addView = ToolView(image: UIImage(named: "add"))
+    private var pencilView = UIImageView(image: UIImage(named: "pencil"))
+    private var addView = UIImageView(image: UIImage(named: "add"))
     private lazy var toolsStackView = UIStackView(tools: [self.copybookStackView, self.historyStackView, self.settingStackView])
     var copybookCallback: Block?
     var historyCallback: Block?
     var settingCallback: Block?
+    var pencilViewCallback: Block?
+    var addViewCallback: Block?
     // Todo
     private var copybookView = UIImageView(image: UIImage(named: "字帖示例"))
 
@@ -34,10 +36,11 @@ class ToolsView: UIView {
         self.addSubview(self.toolsStackView)
         self.addSubview(self.pencilView)
         self.addSubview(self.addView)
-        
         self.copybookStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapCopybook)))
         self.historyStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapHistory)))
         self.settingStackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapSetting)))
+        self.pencilView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapPencilView)))
+        self.addView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapAddView)))
         
         self.addView.centerYAnchor == self.centerYAnchor
         self.addView.rightAnchor == self.rightAnchor - 24
@@ -45,6 +48,9 @@ class ToolsView: UIView {
         self.pencilView.centerYAnchor == self.centerYAnchor
         self.toolsStackView.centerYAnchor == self.centerYAnchor
         self.toolsStackView.leftAnchor == self.leftAnchor + 24
+        
+        self.pencilView.isUserInteractionEnabled = true
+        self.addView.isUserInteractionEnabled = true
     }
     
     @objc private func didTapCopybook() {
@@ -63,6 +69,14 @@ class ToolsView: UIView {
         self.configToolsColor(type: .setting)
         self.hasToolsShowed(false)
         self.settingCallback?()
+    }
+    
+    @objc private func didTapPencilView() {
+        self.pencilViewCallback?()
+    }
+    
+    @objc private func didTapAddView() {
+        self.addViewCallback?()
     }
     
     private func configToolColor(stackView: UIStackView, color: UIColor) {

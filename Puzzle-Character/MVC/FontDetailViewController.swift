@@ -21,4 +21,8 @@ class FontDetailViewController: CustomViewController {
         self.view.addSubview(fontDetailView)
         fontDetailView.centerAnchors == self.view.centerAnchors
     }
+    override func configViews() {
+        super.configViews()
+        self.isNextViewHidden(true)
+    }
 }

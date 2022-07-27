@@ -29,6 +29,7 @@ class HistoryViewController: CustomViewController {
             guard let self = self else { return }
             self.navigationController?.pushViewController(self.fontViewController[FontNameNumberType(type: type).rawValue], animated: true)
         }
+        self.isNextViewHidden(true)
     }
 }
 
